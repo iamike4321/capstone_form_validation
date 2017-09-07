@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Capulusss:Contact Page</title>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+  <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar not fixed, set at top-->
+  <nav class="navbar navbar-inverse ">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="Nindex.html" id="navAnchor"> <img src="images/capulusss_logo2.png" id="navLogo"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="Nindex.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+          <li><a href="menu.html">Menu</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <!-- column containing the option of phone call or chat with a number and a chat button -->
+      <div class="col-xs-12 col-md-6">
+        <h1>Contact Us Through Chat or Phone Call</h1>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <h3>Phone Number Contact:</h3>
+            <h4>1+(602)123-1234</h4>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <h3>Click Below To Chat:</h3>
+            <button type="button" name="button" onclick="waitTime()">24/7 Chat for Capulusss</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div id="jsForm">
+          <!-- form from bootstrap to validate email and phone number -->
+          <!-- linked to a js form validator in order to make sure the number is proper -->
+          <form class="form-horizontal" id="form1">
+            <h1>Contact us Through Email for Better Results</h1>
+            <div class="form-group">
+              <label for="Email" class="col-sm-3">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tel" class="col-sm-3 ">Phone Number:</label>
+              <div class="col-sm-10">
+                <input type="tel" class="form-control" id="tel" placeholder="(###)###-####">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <label for="Message">Insert Message Here:</label>
+                <textarea name="msg" id="msg" rows="8" cols="80"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-9 col-sm-10">
+                  <button type="submit" class="btn btn-default" onclick="validateForm()">Submit Message</button>
+                </div>
+              </div>
+          </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer that includes the copyright as well as another nav in the bottom -->
+    <footer class="navbar-fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <ul>
+              <li><a href="Nindex.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="menu.html">Menu Items</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <p> &copy; 2017, All Rights Reserved, Capulusss LLC &copy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

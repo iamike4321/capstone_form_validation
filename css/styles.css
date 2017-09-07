@@ -1,0 +1,147 @@
+/*========================================
+                  INDEX PAGE
+=========================================*/
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+/*======================================
+                  NAVBAR
+=======================================*/
+
+/*Nav bar Styling code begin*/
+.navbar-inverse {
+    border: 1px solid white;
+    background-color: white;
+}
+
+#navbar ul li a:hover {
+    color: rgb(165, 0, 0);
+}
+
+.active:hover {
+    color: white;
+}
+
+#navLogo {
+    width: 50%;
+    height: 180%;
+}
+/*End of the Nav bar Code */
+
+/*======================================
+                  JUMBOTRONS CODE
+=======================================*/
+
+/*Jumbotron Code begining */
+.jumbotron {
+    overflow: none;
+    height: 500px;
+    color: #fff;
+    background: /*#1b222a*/
+    url(../images/jtBg.jpeg) no-repeat top center;
+}
+/*End of Jumbotron Code */
+
+
+/*Mission code */
+.mission {
+    color: white;
+    border-radius: 8px;
+    background-image: url(../images/missionBg.jpg);
+    font-size: 1.6em;
+}
+/*End of Mission Code*/
+
+
+/*======================================
+                  FAQ CODE
+=======================================*/
+.general ul {
+    list-style: none;
+}
+
+.general ul li a:hover {
+    text-decoration: none;
+    color: rgb(165, 0, 0);
+}
+/*End of general code */
+/*End of index code*/
+
+/*======================================
+                  ABOUT PAGE
+=======================================*/
+
+.rPic {
+    width: 100%;
+    height: 40%;
+}
+
+.pPic {
+    width: 75px;
+    height: 75px;
+    text-align: left;
+}
+
+.aboutUsText {
+    padding-top: 60px;
+    text-align: left;
+    border-right: solid;
+    border-right-color: darkgrey;
+    font-size: 1.3em;
+}
+
+.row1 {
+    padding-top: 80px;
+    padding-left: 60px;
+}
+
+
+/*end of about page code*/
+
+/*======================================
+                  MENU PAGE
+=======================================*/
+.counter{
+  padding-bottom: 20px;
+}
+.menu {
+  border: 1px solid black;
+  padding:20px;
+}
+.cImg{
+  width: auto;
+  height: 100px;
+border: 1px solid black;
+}
+
+/*end of menu code*/
+/*======================================
+                  FOOTER
+=======================================*/
+
+footer {
+    padding: 20px 0 15px 0;
+    background: white;
+}
+
+footer li {
+    float: left;
+    padding: 0px 10px 0px 10px;
+    list-style: none;
+}
+
+footer a {
+    color: grey;
+}
+
+footer li a:hover {
+    text-decoration: none;
+    color: rgb(165, 0, 0);
+}
+
+footer p {
+    float: right;
+    color: grey;
+}
+/*End of Footer Code*/
