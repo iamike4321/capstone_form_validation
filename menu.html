@@ -1,129 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Capulusss:Home Page</title>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Capulusss:Home Page</title>
+  <link rel="stylesheet" href="css/bootstrap.css" type= "text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script type="text/javascript" src="js/functions.js"></script>
-</head>
+  </head>
 
-<body onload="counter()">
+  <body onload="counter()">
 
-  <!--  navbar static, not fixed to top. -->
-  <nav class="navbar navbar-inverse">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <!--  navbar static, not fixed to top. -->
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="index.html" id="navAnchor"> <img src="images/capulusss_logo2.png" id="navLogo"></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="active"><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Order</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </nav>
-
-  <!-- little counter that automatically adds to itself with a setinterval command -->
-  <div class="container counter">
-    <div class="row">
-      <div class="col-xs-12 col-sm-4 offset-sm-8">
-        <p>Amount of Customers served:</p>
-        <input type="number" value="1828" id="counter" readonly onload="counter()">
-      </div>
-    </div>
-  </div>
-
-  <!-- span tag to display image once an img is clicked on, contains a timeout  -->
-  <span id="ogImg" onclick="setTimeout(removeImage, 500)"></span>
-
-
-  <!-- container holding menu items and if a picture were to be clicked, then the image would enlargen where the span tag is -->
-  <div class="container menu">
-    <div class="row">
-      <div class="col-xs-12">
-        <!-- row 1 of item list -->
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 item">
-            <img src="images/Egg_Coffee.jpg" class="cImg" onclick="showImage()">
-            <h4 class="cH4">Vietnamese egg coffee</h4>
-
-          </div>
-          <div class="col-xs-12 col-sm-4 item">
-            <img src="images/ColdBrew.jpg" class="cImg" onclick="setTimeout(showImage, 500)">
-            <h4 class="cH4">Cold Brew</h4>
-
-          </div>
-          <div class="col-xs-12 col-sm-4 item">
-            <img src="images/JapCold.jpg" class="cImg" onclick="setTimeout(showImage, 500)">
-            <h4 class="cH4">Japenese cold press</h4>
-
-          </div>
-        </div><br>
-        <!-- row 2 of item list -->
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 item">
-            <img src="images/Turkish.jpg" class="cImg" onclick="setTimeout(showImage, 500)">
-            <h4 class="cH4">Turkish</h4>
-
-          </div>
-          <div class="col-xs-12 col-sm-4 item">
-            <img src="images/Café.jpg" class="cImg" onclick="setTimeout(showImage, 500)">
-            <h4 class="cH4">Café del Tiempo</h4>
-
-          </div>
-          <div class="col-xs-12 col-sm-4 item">
-            <img src="images/Affogato.jpg" class="cImg" onclick="setTimeout(showImage, 500)">
-            <h4 class="cH4">Affogato</h4>
-
-          </div>
+          <a class="navbar-brand" href="index.html" id="navAnchor"> <img src="images/capulusss_logo2.png" id="navLogo"></a>
         </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- footer that includes the copyright as well as another nav in the bottom -->
-  <footer class="navbar-fixed-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <ul>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="menu.html">Menu Items</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="menu.html">Menu</a></li>
           </ul>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <p> &copy; 2017, All Rights Reserved, Capulusss LLC &copy</p>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!-- little counter that automatically adds to itself with a setinterval command -->
+    <div class="container counter">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 offset-sm-8">
+          <p>Amount of Customers served:</p>
+          <input type="number"  value="1828" id="counter" readonly onload="counter()">
         </div>
       </div>
     </div>
-  </footer>
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
 
+    <!-- span tag to display image once an img is clicked on, contains a timeout  -->
+    <span id="ogImg" onclick="setTimeout(removeImage, 500)"></span>
+
+
+<!-- container holding menu items and if a picture were to be clicked, then the image would enlargen where the span tag is -->
+    <div class="container menu">
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- row 1 of item list -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 item">
+                <img src="images/cImg.jpeg" class="cImg" onclick="setTimeout(showImage, 500)">
+                <h4 class="cH4">coffee #1</h4>
+
+            </div>
+            <div class="col-xs-12 col-sm-4 item">
+                <img src="images/cImg.jpeg" class="cImg" onclick="setTimeout(showImage, 500)">
+                <h4 class="cH4">coffee #2</h4>
+
+            </div>
+            <div class="col-xs-12 col-sm-4 item">
+                <img src="images/cImg.jpeg" class="cImg" onclick="setTimeout(showImage, 500)">
+                <h4 class="cH4">coffee #3</h4>
+
+            </div>
+          </div><br>
+          <!-- row 2 of item list -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 item">
+                <img src="images/cImg.jpeg" class="cImg" onclick="setTimeout(showImage, 500)">
+                <h4 class="cH4">coffee #4</h4>
+
+            </div>
+            <div class="col-xs-12 col-sm-4 item">
+                <img src="images/cImg.jpeg" class="cImg" onclick="setTimeout(showImage, 500)">
+                <h4 class="cH4">coffee #5</h4>
+
+            </div>
+            <div class="col-xs-12 col-sm-4 item">
+                <img src="images/cImg.jpeg" class="cImg" onclick="setTimeout(showImage, 500)">
+                <h4 class="cH4">coffee #6</h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- footer that includes the copyright as well as another nav in the bottom -->
+    <footer class="navbar-fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="menu.html">Menu Items</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+          <p>  &copy; 2017, All Rights Reserved, Capulusss LLC &copy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>
