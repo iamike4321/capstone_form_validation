@@ -1,0 +1,189 @@
+<!--
+  Capstone Projects
+  Author: Christian A. Fernandez
+  Date:   8.23.17
+  Filename: payment.html
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Capulusss:Payment Page</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  </head>
+
+<body>
+<form class="" action="payment.html" method="post">
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html" id="navAnchor"> <img src="images/capulusss_logo2.png" id="navLogo"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="menu.html">Menu</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  <div id="errorText"></div>
+  <fieldset id="paymentInfo">
+<div class="errorText"></div>
+  <div class="container">
+    <div class="row2">
+      <div class="col-xs-12 col-md-6 ">
+        <br>
+        <br>
+        <br>
+        <h1>Enter your payment method below</h1>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+
+
+    <div class="row2">
+      <div class="form-group">
+        <label for="cardNum" class="col-sm-3">Card Number:</label>
+        <div class="col-sm-10">
+          <input type="cardNum" class="form-control" id="cardNum" placeholder="">
+        </div>
+      </div>
+      <!-- <div class="form-group">
+        <label for="nameCard" class="col-sm-3 ">Name on Card:</label>
+        <div class="col-sm-10">
+          <input type="nameCard" class="form-control" id="nameCard" placeholder="">
+        </div>
+      </div> -->
+      <div class="form-group">
+        <label for="ccv" class="col-sm-3 ">CCV:</label>
+
+        <div class="col-sm-10">
+          <input type="ccv" class="form-control" id="ccv" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-4">
+          <br>
+          <label for="Message">Type of Card:</label>
+          <br>
+          <label><input type="radio" name="paymentType"> Visa</label>
+          <label><input type="radio" name="paymentType"> Master Card</label>
+          <label><input type="radio" name="paymentType"> Discover</label>
+          <label><input type="radio" name="paymentType"> American Exp</label>
+
+        </div>
+      </div>
+    </div>
+  </div></fieldset>
+  <fieldset class="deliveryDate">
+
+
+  <div class="container">
+    <br>
+    <div class="row">
+      <div class="col-xs-12 col-sm-1 ">
+        <label for="sel1">Month:
+        <select class="form-control" id="sel1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          </label>
+
+      </select>
+
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-2">
+
+      <label for="sel1">Exp Year:
+        <select class="form-control" id="sel1">
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+        </label>
+    </div>
+    </select>
+
+</fieldset>
+
+    <div class="form-group">
+      <br>
+      <div id="buttonContainer">
+                    <input type="submit" value="Place Order" id="orderButton" />
+                </div>
+       </div>
+    </form>
+
+  </div>
+
+  </div>
+  </div>
+  </div>
+</form>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="menu.html">Menu Items</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <p> &copy; 2017, All Rights Reserved, Capulusss LLC &copy</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/payment.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
